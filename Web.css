@@ -1,0 +1,346 @@
+*{
+	margin : 0;
+	padding : 0;
+	box-sizing: border-box;
+}
+
+:root{
+	--heading: rgb(60 60 60);
+	--para: #999;
+	--mainbg: rgb(0 0 0);
+	--navbg: rgb(95 255 108);
+	--webname: rgb(255 134 35);
+	--hedingthree: rgb(255 255 255);
+	--navcolor: rgb(255 95 185);
+}
+
+html{
+	font-size: 62.5%;
+	
+}
+
+h1{
+	color: var(--heading);
+	font-size: 6rem;
+	font-weight: 600;
+}
+h2{
+	color: var(--webname);
+	font-size: 3.7rem;
+	font-wight: 500;
+}
+h3{
+	font-size: 2.8rem;
+	font-weight: 400;
+	color: var(--headingthree);
+}
+p{
+	color: var(--para);
+	font-size: 1.7rem;
+	line-height: 1.6;
+}
+.navbar1 a{
+	text-decoration: none;
+	font-size: 2rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-family: arial;
+	color: var(--headingthree);
+	padding:19px;
+}
+
+.navbar1 li{
+	list-style: none;
+	padding: 2px;
+	float: none;
+	display: inline-block;
+	
+}
+.navbar1 ul{
+	padding: 0;
+	list-style: none;
+	margin: 0;
+	text-align: right;
+	justify-content: space-between;
+	
+}
+@keyframes liquidBackground {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+body{
+	background:url("bg.jpg");
+}
+.logocolor{
+	color: red;
+}
+.homecolor{
+	background-color: #FF928B;
+	border-radius: 5px;
+}
+.seperatline{
+	color: red;
+}
+main{
+	padding: 16px;
+	margin-top: 30px;
+}
+.navbar1{
+	position: fixed;
+	line-height: 42px;
+	top: 0;
+	right: 0;
+	width:70%;
+	padding:5px; 
+	float: right;
+	z-index: 10000;
+	background: linear-gradient(45deg, #FFA500, #00FFFF);
+	background-size: 200% 200%;
+	animation: liquidBackground 5s infinite;
+	
+}
+
+.logo{
+	position: fixed;
+	top:0;
+	width: 30%;
+	line-height: auto;
+	padding: 5px;
+	float: center;
+	z-index: 10000;
+	background: linear-gradient(45deg, #FFA500, #00FFFF);
+	background-size: 200% 200%;
+	animation: liquidBackground 5s infinite;
+	
+}
+.logoimg{
+	width: 100%;
+	
+}
+.logo li{
+	list-style: none;
+	font-size: 2.3rem;
+}
+.home{
+    width: 5%;
+    justify-content: center;
+}
+
+}
+
+.gimg{
+	width: 10%
+}
+
+
+.navbar1 a:hover,
+.navbar1 a.active {
+	color: red;
+	transition: .3s;
+}
+
+.topicimage{
+	height: 550px;
+	width: 50%;
+	float: left;
+}
+.topicimg{
+	width: 86%;
+}
+.topic{
+	height: 550px;
+	width: 50%;
+	float: right;
+}
+.channelbtn{
+	background-color: rgb(90 90 90);
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border-radius: 15px;
+	cursor: pointer;
+	width: 60%;
+	font-size: 2rem;
+}
+.channelbtn a{
+	text-decoration: none;
+	color: white;
+}
+.channelbtn a:hover{
+	color: #ea1538;
+	transition: .3s;
+}
+.navicon{
+	width: 35px;
+	height: 5px;
+	background-color: black;
+	margin: 6px 0px;
+}
+.navcollection{
+	width: 20%;
+	height: 20%;
+	padding: 0px 5px;
+}/* Existing CSS styles for other elements remain unchanged */
+
+/* Footer styles */
+footer {
+    background: #111;
+    padding-top: 40px;
+    color: #fff;
+    clear: both;
+}
+
+.footer-content {
+    text-align: center;
+}
+
+.footer-content h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+/* Existing CSS styles for other elements remain unchanged */
+
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Align icons horizontally in the center */
+    margin: 1rem 0 3rem 0;
+    gap: 30px; /* Add padding around the icons */
+}
+
+.socials li {
+    margin: 0 15px; /* Increase the spacing between the icons */
+}
+
+.socials a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.socials a i {
+    font-size: 2.5rem; /* Increase the size of the icons */
+    transition: color .4s ease;
+}
+
+.socials a:hover i {
+    color: aqua;
+}
+
+.footer-bottom {
+    background: #000;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom span {
+    text-transform: uppercase;
+    opacity: .6;
+    font-weight: 300;
+}
+
+section{
+	min-height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.video-container {
+   margin-bottom: 20px; /* Adjust the spacing between videos */
+ }
+ .songtopic h2{
+ 	text-align: center;
+ }
+ 
+ 
+ .about-section {
+ max-width: 600px;
+ margin: 50px auto;
+ padding: 20px;
+ background: url("bg.jpg");
+ border-radius: 5px;
+ box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+ }
+.about-section img {
+   display: block;
+   margin: 20px auto;
+   width: 200px;
+   border-radius: 50%;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+ }
+ .about-section p{
+ 	color: rgb(135 255 209);
+ }
+ .homesection{
+ 	padding: 70px 0px;
+ }
+ .songsection{
+ 	padding: 70px 0px;
+ }
+ .aboutsection{
+ 	padding: 0px 0px;
+ }
+ .devloperdiv h2{
+ 	text-align: center;
+ }
+ .devloper{
+ 	max-width: 600px;
+ 	margin: 50px auto;
+ 	padding: 20px;
+ 	background: url("bg.jpg");
+ 	border-radius: 5px;
+ 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+ }
+ 
+
+ /* Responsive adjustments using media queries */
+ 
+ /* For screens up to 600px wide */
+ @media (max-width: 600px) {
+ h1 {
+ font-size: 4.5rem;
+ }
+ h2 {
+ font-size: 2.8rem;
+ }
+ h3 {
+ font-size: 2.2rem;
+ }
+ p {
+ font-size: 1.5rem;
+ }
+ 
+ /* Additional responsive adjustments for other elements if needed */
+ }
+ 
+ /* For screens between 601px and 1024px wide */
+ @media (min-width: 601px) and (max-width: 1024px) {
+ /* Add specific styles for this range if needed */
+ }
+ 
+ /* For screens above 1024px wide */
+ @media (min-width: 1025px) {
+ /* Add specific styles for this range if needed */
+ }
+ 
+ /* Existing CSS code for other elements remains unchanged */
+ 
